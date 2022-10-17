@@ -39,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-[Solution URL](https://github.com/Austinet/interactiveCard.git)
-[Live site URL](https://austinet.github.io/interactiveCard/)
+- [Solution URL](https://github.com/Austinet/interactiveCard.git)
+- [Live site URL](https://austinet.github.io/interactiveCard/)
 
 ## My process
 

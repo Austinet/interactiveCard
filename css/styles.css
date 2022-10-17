@@ -303,3 +303,23 @@ button:hover {
         width: 4.95rem;
     }
 }
+
+@media (max-width: 350px) {
+    .card-back,
+    .card-front {
+        width: 280px;
+        height: 175px;
+    }
+
+    .card-back {
+        margin-left: 1rem;
+    }
+
+    .card-number {
+        font-size: 1.5rem;
+    }
+    .card-expiry-date input {
+        width: 4.3rem;
+    }
+
+}
