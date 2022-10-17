@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="Interactive card form and details, updates card details real time, a Frontend mentor challenge coded by Austinet using HTML, CSS, and JS">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Frontend Mentor | Interactive card details form | Austinet</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+  <main>
+    <section id="interactive-card-section">
+      <div class="interactive-card-bg">
+        
+      </div>
+      <div class="interactive-card">
+        <form id="card-form" name="card-form" class="interactive-card-form">
+          <div class="card-holder">
+            <label for="cardHolder">Cardholder Name</label>
+            <input type="text" id="cardHolder" name="cardHolder" placeholder="e.g. Jane Appleseed" class="width-100">
+            <span id="card-holder-error" class="errorContainer">Can't be blank</span>
+          </div>
+          <div class="cardNumber">
+            <label for="card-number">Card Number</label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="e.g. 1234 5678 9123 0000" class="width-100" maxlength="19">
+            <span id="card-number-error" class="errorContainer">Can't be blank</span>
+          </div>
+          <div class="card-expiry-and-cvc-section">
+             <div class="card-expiry-date">    
+               <label for="cardExpiryMonth">Exp. Date (MM/YY)</label>
+               <div class="card-expiry-inputs">
+                   <input type="text" name="cardExpiryMonth" id="cardExpiryMonth" placeholder="MM" maxlength="2">
+                   <input type="text" name="cardExpiryYear" id="cardExpiryYear" placeholder="YY" maxlength="2">
+                   <span id="card-expiry-error" class="errorContainer">Can't be blank</span>
+               </div>   
+             </div>
+             <div class="cvc">
+               <label for="cvc">CVC</label>
+               <input type="text" id="cvc" name="cvc" placeholder="e.g. 123" maxlength="3">
+               <span id="card-cvc-error" class="errorContainer">Can't be blank</span>
+             </div>
+          </div>     
+          <button type="submit" class="btn">Confirm</button>
+        </form>
+
+          <!-- Completed state start -->
+        <div id="completed"  class="completed hidden">
+          <img src="images/icon-complete.svg" alt="Checked icon">
+          <h2>Thank you!</h2>
+          <p> We've added your card details</p>
+          <button class="btn" id="continue-btn">Continue</button>
+        </div>
+      </div>
+        
+    </section>
+    <section id="cards">
+      <div class="card-front">
+          <img src="images/card-logo.svg" alt="card logo">
+          <p class="card-number">0000 0000 0000 0000</p>
+          <div class="card-details">
+            <p class="card-user">Jane Appleseed</p>
+            <p class="card-expiry"><span id="card-month">00</span>/<span id="card-year">00</span></p>
+          </div>
+      </div>
+      <div class="card-back">
+         <p class="cvc-number">000</p>
+      </div>
+    </section>
+  </main> 
+   
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://Austinet.github.io/portfolio">Austinet</a>.
+  </div> -->
+  <script src="js/index.js"></script>
+</body>
+</html>
